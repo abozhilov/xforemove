@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "XFORemove",
+    "version": "1.0",
+    "description": "Removes X-Frame-Options",
+
+    "applications": {
+        "gecko": {
+            "id": "addon@example.com",
+            "strict_min_version": "42.0",
+            "strict_max_version": "50.*",
+            "update_url": "https://example.com/updates.json"
+        }
+    },
+    
+    "background" : {
+        "scripts" : ["xforemove.js"]
+    },
+    "permissions" : [
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking"
+    ]
+}
